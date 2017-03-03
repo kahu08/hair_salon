@@ -1,0 +1,28 @@
+<div class="backgroundForm">
+<br>
+<br>
+<br>
+<br>
+    <form action="/clients" method="post">
+        <label for="stylist_id" style="color:#415A77; font-size:30px;">Select a stylist</label>
+        <br>
+        <select id='stylist_id' name='stylist_id' type='text' style="border-radius: 27px; font-size:30px; padding:10px;" class="maneno">
+            <% @stylists.each() do |stylist| %>
+            <option value="<%= stylist.id()%>">
+                <%= stylist.name() %>
+            </option>
+            <% end %>
+        </select>
+        <br>
+        <br>
+        <br>
+        <br>
+        <label>
+            <input id="name" name="name" type="text" required/>
+
+            <div class="label-text">Client name</div>
+        </label>
+        <button type="submit">Add client</button>
+    </form>
+</form>
+</div>

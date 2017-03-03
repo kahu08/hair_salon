@@ -1,0 +1,14 @@
+<div class="background">
+
+  <h2 style="font-family: 'Satisfy', cursive; font-size:47px;">Here are our wonderful stylists</h2>
+
+  <%if @stylists.any?() %>
+  <ul  id="list">
+    <% @stylists.each do |stylist| %>
+    <li><a href="/stylists/<%= stylist.id()%>"><%= stylist.name()%></a></li>
+    <% end %>
+  </ul>
+  <%else %>
+  <p>no stylists</p>
+  <%end%>
+</div>
