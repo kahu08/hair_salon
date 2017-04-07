@@ -2,9 +2,13 @@
   <% if @stylist.clients().any?() %>
   <h3>Here are all the clients in this stylist:</h3>
 
- <ul>
+ <ul style="list-style: none;">
     <% @stylist.clients().each() do |client| %>
-      <li><%= client.name() %><button class="btn"><a href="">Delete Client</a></button></li>
+    <li><%= client.name() %></li>
+      <form onsubmit="confirm('Are you sure you want to delete the following note?')" action="/clients/<%= @stylist.id %>" method="POST">
+          <input type="hidden" name="_method" value="DELETE">
+          <button type="submit">Delete</button>
+        </form>
     <% end %>
   </ul>
 

@@ -1,129 +1,142 @@
-  .header {
-      background-color: #1E2D24;
-      color: #D10490;
-      text-align: center;
-      font-family: 'Abril Fatface', cursive;
-  }
+body {
+    /*font-style: italic;*/
+    font-family: 'Inconsolata', monospace;
+}
 
-  .navbar-default {
-      background-color: #E574BC;
-      /*border-color: #030033;*/
-      margin: 0;
-      border: 0;
-      color: black;
-      padding: 10px;
-  }
+.header {
+    background-color: #1E2D24;
+    color: #D10490;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+}
 
-  .jumbotron {
-      margin: 0;
-  }
+.navbar-default {
+    background-color: #E574BC;
+    /*border-color: #030033;*/
+    margin: 0;
+    border: 0;
+    color: black;
+    padding: 10px;
+}
 
-  .navbar-default .navbar-nav>li>a {
-      color: black;
-      /*Change active text color here*/
-      font-family: 'Satisfy', cursive;
-      font-size: 30px;
-  }
+.jumbotron {
+    margin: 0;
+}
 
-  */ .background {
-      background-color: #F9B4ED;
-      height: 100%;
-      overflow-x: hidden;
-      overflow-y: hidden;
-      text-align: center;
-  }
+.navbar-default .navbar-nav>li>a {
+    color: black;
+    /*Change active text color here*/
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+}
 
-  #list {
-      list-style: none;
-      font-size: 30px;
-  }
-  /*input form*/
+.testimony {
+    float: center;
+}
 
-  .backgroundForm {
-      background-color: #333333;
-      font-family: "Open Sans", Helvetica;
-      padding-bottom: 350px;
-  }
+.background {
+    background-color: #F9B4ED;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
 
-  .maneno {
-      font-family: 'Inconsolata', monospace;
-  }
+#list {
+    list-style: none;
+    font-size: 30px;
+}
 
-  form {
-      text-align: center;
-  }
 
-  label {
-      display: block;
-      letter-spacing: 4px;
-      padding-top: 30px;
-      text-align: center;
-  }
+/*input form*/
 
-  label .label-text {
-      color: #9B9B9B;
-      cursor: text;
-      font-size: 20px;
-      line-height: 20px;
-      text-transform: uppercase;
-      -moz-transform: translateY(-34px);
-      -ms-transform: translateY(-34px);
-      -webkit-transform: translateY(-34px);
-      transform: translateY(-34px);
-      transition: all 0.3s;
-  }
+.backgroundForm {
+    background-color: #333333;
+    font-family: "Open Sans", Helvetica;
+    padding-bottom: 350px;
+}
 
-  label input {
-      background-color: transparent;
-      border: 0;
-      border-bottom: 2px solid #4A4A4A;
-      color: white;
-      font-size: 36px;
-      letter-spacing: -1px;
-      outline: 0;
-      padding: 5px 20px;
-      text-align: center;
-      transition: all 0.3s;
-      width: 200px;
-  }
+.maneno {
+    font-family: 'Inconsolata', monospace;
+}
 
-  label input:focus {
-      max-width: 100%;
-      width: 400px;
-  }
+form {
+    text-align: center;
+}
 
-  label input:focus+.label-text {
-      color: #F0F0F0;
-      font-size: 13px;
-      -moz-transform: translateY(-74px);
-      -ms-transform: translateY(-74px);
-      -webkit-transform: translateY(-74px);
-      transform: translateY(-74px);
-  }
+label {
+    display: block;
+    letter-spacing: 4px;
+    padding-top: 30px;
+    text-align: center;
+}
 
-  label input:valid+.label-text {
-      font-size: 13px;
-      -moz-transform: translateY(-74px);
-      -ms-transform: translateY(-74px);
-      -webkit-transform: translateY(-74px);
-      transform: translateY(-74px);
-  }
+label .label-text {
+    color: #9B9B9B;
+    cursor: text;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    -moz-transform: translateY(-34px);
+    -ms-transform: translateY(-34px);
+    -webkit-transform: translateY(-34px);
+    transform: translateY(-34px);
+    transition: all 0.3s;
+}
 
-  button {
-      background-color: #333333;
-      border: 2px solid white;
-      border-radius: 27px;
-      color: white;
-      cursor: pointer;
-      font-size: 20px;
-      margin-top: 20px;
-      padding: 15px 30px;
-      text-transform: uppercase;
-      transition: all 200ms;
-  }
+label input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #4A4A4A;
+    color: white;
+    font-size: 36px;
+    letter-spacing: -1px;
+    outline: 0;
+    padding: 5px 20px;
+    text-align: center;
+    transition: all 0.3s;
+    width: 200px;
+}
 
-  button:hover, button:focus {
-      background-color: white;
-      color: #333333;
-      outline: 0;
-  }
+label input:focus {
+    max-width: 100%;
+    width: 400px;
+}
+
+label input:focus+.label-text {
+    color: #F0F0F0;
+    font-size: 13px;
+    -moz-transform: translateY(-74px);
+    -ms-transform: translateY(-74px);
+    -webkit-transform: translateY(-74px);
+    transform: translateY(-74px);
+}
+
+label input:valid+.label-text {
+    font-size: 13px;
+    -moz-transform: translateY(-74px);
+    -ms-transform: translateY(-74px);
+    -webkit-transform: translateY(-74px);
+    transform: translateY(-74px);
+}
+
+button {
+    background-color: #333333;
+    border: 2px solid white;
+    border-radius: 27px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    transition: all 200ms;
+}
+
+button:hover, button:focus {
+    background-color: white;
+    color: #333333;
+    outline: 0;
+}

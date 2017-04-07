@@ -70,3 +70,15 @@ DB = PG.connect({:dbname => "hair_salon"})
     @stylists = Stylist.all()
     erb(:client_form)
   end
+
+  # get("/clients") do
+  #   @clients = Client.all()
+  #   erb(:clients)
+  # end
+
+  delete("/clients/:id") do
+    @stylist = Stylist.find(params.fetch("id").to_i())
+    @client = Client.find(params.fetch("id").to_i())
+    @client.delete()
+    erb(:clients)
+  end
