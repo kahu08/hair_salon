@@ -1,3 +1,8 @@
+body {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 35%;
+}
+
 .header {
     background-color: #1E2D24;
     color: #D10490;
@@ -27,6 +32,7 @@
 
 .testimony {
     text-align: center;
+    box-shadow: 10px 10px 5px #888888;
 }
 
 .background {
